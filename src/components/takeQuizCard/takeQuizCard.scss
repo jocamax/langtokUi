@@ -1,0 +1,42 @@
+@import "../../styles/variables.scss";
+
+.takeQuizContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+
+    h2 {
+        margin-bottom: 24px;
+    }
+
+    .quizButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 10px;
+        border: 3px solid $blue;
+        padding: 10px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        .quizIcon {
+            font-size: 100px;
+            color: $blue;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+    }
+
+
+}

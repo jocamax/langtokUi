@@ -1,0 +1,52 @@
+@import '../../styles/variables.scss';
+
+.navBarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+
+    height: 80px;
+    background-color: $secondary-color;
+    color: $white-gray;
+
+    /* make it sticky */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+
+    .navIcon {
+        width: 30px;
+        height: 30px;
+        color: $white-gray;
+    }
+
+    .left {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+
+        h1 {
+            font-size: 28px;
+
+        }
+
+        .huIcon {
+            width: 30px;
+            border-radius: 50%;
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+    }
+}

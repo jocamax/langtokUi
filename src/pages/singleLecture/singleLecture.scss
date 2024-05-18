@@ -1,0 +1,56 @@
+@import '../../styles/variables.scss';
+
+.singleLectureContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: $white-gray;
+    background-color: $background-color;
+    min-height: calc(100vh - 125px);
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+
+    @media (min-width: 768px) {
+        min-height: 100vh;
+    }
+
+    .singleLectureTopBar {
+        align-self: flex-start;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .topBarQuizBtn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background-color: $blue;
+            padding: 5px;
+            border-radius: 5px;
+
+            &:hover {
+                opacity: .9;
+            }
+
+        }
+    }
+
+
+    .lectureContent {
+        max-width: 800px;
+        margin: 15px auto;
+        padding: 10px;
+    }
+
+
+
+    p {
+        margin: 10px 0;
+    }
+
+
+
+
+}

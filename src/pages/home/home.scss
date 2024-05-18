@@ -1,0 +1,141 @@
+@import '../../styles/variables.scss';
+
+.homeContainer {
+    background-color: $background-color;
+    min-height: 100vh;
+
+    .contentWrapper {
+        max-width: 900px;
+        margin: 0 auto;
+        // Move the rest of your styles for content here
+    }
+
+    .sortByContainer {
+        display: flex;
+        gap: 15px;
+        padding: 15px;
+        border-bottom: 1px solid $secondary-color;
+
+
+        .sortByOption {
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: $secondary-color;
+            color: $white-gray;
+
+            span {}
+
+            select {
+                background-color: $secondary-color;
+                color: $white-gray;
+                border: 2px solid $blue;
+                outline: none;
+                padding: 2px;
+                border-radius: 5px;
+                margin-left: 10px;
+
+                option {
+                    background-color: $secondary-color;
+                    color: $white-gray;
+                    padding: 5px;
+                    border: 1px solid $blue;
+                    outline: none;
+
+                    font-size: 14px;
+
+
+                }
+            }
+        }
+    }
+
+    .lecturesContainer {
+        padding-bottom: 30px;
+
+        .chapter1 {
+
+            .chapterInfo {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+
+                h2 {
+                    color: $white-gray;
+                    padding: 10px;
+                }
+
+                span {
+                    color: $white-gray;
+                    padding: 10px;
+                }
+
+                button {
+                    background-color: $blue;
+                    width: 70px;
+                    color: $white-gray;
+                    border: 2px solid $blue;
+                    outline: none;
+                    padding: 5px;
+                    border-radius: 5px;
+                    margin-right: 10px;
+                }
+            }
+
+        }
+
+        .lectures {
+            padding: 5px 15px;
+            max-width: 800px;
+            padding-bottom: 28px;
+            border-bottom: 1px solid $secondary-color;
+
+            .miniStats {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                h4 {
+                    color: $white-gray;
+                    padding: 5px;
+
+                }
+
+                p {
+                    color: $gray-text;
+
+
+                }
+            }
+
+            h4 {
+                color: $white-gray;
+                padding: 5px;
+
+            }
+
+
+            .modalControl {
+                &[data-inactive] {
+                    opacity: 0;
+                    cursor: default;
+                }
+            }
+
+            .carouselControl {
+                &[data-inactive] {
+                    opacity: 0;
+                    cursor: default;
+                }
+            }
+        }
+    }
+}

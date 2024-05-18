@@ -1,0 +1,63 @@
+@import "../../styles/variables.scss";
+
+.lectureCardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $secondary-color;
+    border-radius: 5px;
+    padding: 10px;
+    width: 160px;
+    height: 130px;
+    color: $white-gray;
+
+    .title {
+        font-size: 13px;
+        font-weight: bold;
+        border-bottom: 2px solid $blue;
+        padding-bottom: 5px;
+        color: $white-gray;
+        text-decoration: none;
+    }
+
+    .details {}
+
+    .bottomButtons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        .bottomRightButtons {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            .heartIcon {
+                font-size: 22px;
+                color: $gray-text;
+                cursor: pointer;
+            }
+
+            .quizIcon {
+                font-size: 22px;
+                color: $blue;
+                cursor: pointer;
+
+            }
+        }
+
+        .checkboxIcon {
+            font-size: 24px;
+            color: $gray-text;
+            cursor: pointer;
+        }
+
+        .completed {
+            color: $green;
+        }
+
+
+
+    }
+}

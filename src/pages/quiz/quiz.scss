@@ -1,0 +1,174 @@
+@import '../../styles/variables.scss';
+
+
+.quizContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100vh;
+    background-color: $background-color;
+
+    .backIcon {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        color: $white-gray;
+        font-size: 32px;
+        cursor: pointer;
+    }
+
+    .header {
+        background-color: $secondary-color;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+
+        h4 {
+            color: $white-gray;
+            font-size: 20px;
+        }
+
+        margin-bottom: 28px;
+    }
+
+    .middleWrapper {
+        width: 90%;
+
+        .questionNumber {
+            color: $white-gray;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            margin: 5px;
+            margin-top: 20px;
+
+            .questionTitle {
+                font-size: 24px;
+                color: $white-gray;
+                margin-bottom: 42px;
+                background-color: $secondary-color;
+                padding: 15px;
+                border-radius: 10px;
+            }
+
+            .options {
+
+                p {
+                    font-size: 18px;
+                    color: $white-gray;
+                    margin-bottom: 14px;
+                    background-color: $secondary-color;
+                    padding: 15px 10px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+
+                .correct {
+                    background-color: $green;
+
+                }
+
+                .incorrect {
+                    background-color: rgb(202, 0, 0);
+
+                }
+            }
+        }
+
+        .connectContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            min-height: 80vh;
+            color: $white-gray;
+
+            .pairs {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .words {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 450px;
+                    margin: 5px;
+
+                    p {
+                        padding: 10px 16px;
+                        background-color: $secondary-color;
+                        margin: 10px;
+                        border-radius: 10px;
+                        cursor: pointer;
+
+                        &:hover {
+                            transform: scale(1.05);
+                            transition: 0.1s;
+                        }
+
+                    }
+
+                    .selected {
+                        color: red;
+                    }
+
+                    .correct {
+                        background-color: green;
+                    }
+
+                    .incorrect {
+                        background-color: red;
+                    }
+                }
+
+                span {
+                    font-size: 22px;
+                    margin-bottom: 5px;
+                }
+
+
+
+
+            }
+
+            .topPairs {}
+
+            .bottomPairs {}
+
+            .continueBtn {
+                padding: 10px 15px;
+                width: 90%;
+                border-radius: 20px;
+                border: none;
+                background-color: $blue;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+        }
+    }
+
+    .footer {
+        padding: 22px;
+
+        .btn {
+            padding: 5px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            color: $white-gray;
+            background-color: $secondary-color;
+            border: 2px solid $blue;
+
+        }
+    }
+
+}
